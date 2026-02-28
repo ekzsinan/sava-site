@@ -2,7 +2,7 @@
 
 export const SITE_NAME = "SAVA";
 export const SITE_URL = "https://sava.com.tr";
-export const SITE_EMAIL = "merhaba@sava.com.tr";
+export const SITE_EMAIL = "info@sava.company";
 export const SITE_LOCATION = "İstanbul, Türkiye";
 export const SITE_WHATSAPP = "https://wa.me/905xxxxxxxxx";
 

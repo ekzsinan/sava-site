@@ -5,7 +5,9 @@ import React, { useState } from "react";
 import Badge from "@/components/ui/Badge";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
-import { SITE_EMAIL, SITE_WHATSAPP } from "@/lib/constants";
+import { SITE_WHATSAPP } from "@/lib/constants";
+
+const CONTACT_EMAIL = "info@sava.company";
 
 const services = [
   "Landing Page",
@@ -19,10 +21,42 @@ const services = [
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSent(true);
+    setLoading(true);
+    setError(null);
+
+    const form = e.currentTarget;
+    const data = {
+      name: (form.elements.namedItem("c-name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("c-email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("c-phone") as HTMLInputElement).value,
+      company: (form.elements.namedItem("c-company") as HTMLInputElement).value,
+      service: (form.elements.namedItem("c-service") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("c-message") as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setSent(true);
+      } else {
+        const json = await res.json();
+        setError(json.error || "Bir hata oluştu. Lütfen tekrar deneyin.");
+      }
+    } catch {
+      setError("Bağlantı hatası. Lütfen tekrar deneyin.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -93,8 +127,15 @@ export default function ContactForm() {
                   <textarea id="c-message" required rows={5} placeholder="Projenizi kısaca anlatın..."
                     className="w-full border border-neutral-200 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none" />
                 </div>
+                {error && (
+                  <p className="text-red-500 text-sm text-center bg-red-50 border border-red-100 rounded-2xl px-4 py-3">
+                    ⚠️ {error}
+                  </p>
+                )}
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button type="submit" className="flex-1" size="lg">Gönder</Button>
+                  <Button type="submit" className="flex-1" size="lg" disabled={loading}>
+                    {loading ? "Gönderiliyor…" : "Gönder"}
+                  </Button>
                   <a
                     href={SITE_WHATSAPP}
                     target="_blank"
@@ -119,8 +160,8 @@ export default function ContactForm() {
               <ul className="space-y-4 text-neutral-600">
                 <li className="flex items-center gap-3">
                   <span className="text-brand-500 text-xl" aria-hidden="true">✉</span>
-                  <a href={`mailto:${SITE_EMAIL}`} className="hover:text-brand-600 transition-colors">
-                    {SITE_EMAIL}
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-brand-600 transition-colors">
+                    {CONTACT_EMAIL}
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
