@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildMetadata({
   title: "Projeler",
   description:
-    "SAVA Digital Factory demo projeleri: Eksen Hukuk, Mavi Fincan ve Orion Travel.",
+    "SAVA Digital Factory demo projeleri: Nomad Home E-Ticaret, Mavi Fincan ve Orion Travel.",
   path: "/work",
 });
 
@@ -46,9 +46,13 @@ export default function WorkPage() {
                 </span>
               </div>
               <div className="p-7 bg-white">
-                <div className="flex items-center gap-2 mb-3">
+                <div className="flex items-center gap-2 mb-3 flex-wrap">
                   <Badge variant="neutral">{item.category}</Badge>
-                  <Badge variant="demo">Demo</Badge>
+                  {"badge" in item && item.badge === "E-Commerce" ? (
+                    <Badge variant="brand">{item.badge}</Badge>
+                  ) : (
+                    <Badge variant="demo">{"badge" in item ? item.badge : "Demo"}</Badge>
+                  )}
                 </div>
                 <h2 className="text-xl font-bold mb-2 group-hover:text-brand-600 transition-colors">
                   {item.title}

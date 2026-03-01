@@ -110,9 +110,11 @@ export default function MaviFincanPage() {
 						</a>
 					</div>
 					<div className="mt-10 flex items-center gap-6 text-sm text-amber-700">
-						<span>☕ Spesiyalite Kahve</span>
-						<span>🥗 Günlük Taze Menü</span>
-						<span>🌿 Vegan Seçenekler</span>
+						<span>Spesiyalite Kahve</span>
+						<span>·</span>
+						<span>Günlük Taze Menü</span>
+						<span>·</span>
+						<span>Vegan Seçenekler</span>
 					</div>
 				</div>
 				<div className="relative">
@@ -120,9 +122,6 @@ export default function MaviFincanPage() {
 						className="h-[420px] rounded-3xl bg-gradient-to-br from-amber-800/60 via-orange-900/40 to-[#1a1208] border border-amber-800/30 flex items-center justify-center overflow-hidden"
 						aria-hidden="true"
 					>
-						<div className="absolute inset-0 flex items-center justify-center opacity-5">
-							<span className="text-[200px] font-black select-none text-amber-200">☕</span>
-						</div>
 						<div className="relative z-10 text-center">
 							<p className="text-amber-400/40 text-xs uppercase tracking-widest mb-2">Fotoğraf alanı</p>
 							<p className="text-amber-600/30 text-xs">Gerçek projede görseller yerleşir</p>
@@ -139,12 +138,12 @@ export default function MaviFincanPage() {
 			<section id="about" className="border-y border-amber-900/20 py-16 px-6">
 				<div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center">
 					{[
-						{ icon: "🫘", title: "Single Origin Kahve", desc: "Etiyopya, Kolombiya ve Guatemala'dan haftalık değişen taze kavrulmuş çekirdekler." },
-						{ icon: "🍳", title: "Günlük Taze Mutfak", desc: "Menümüz mevsime ve pazara göre şekillenir. Her tabak günün sabahında hazırlanır." },
-						{ icon: "🏡", title: "Huzurlu Atmosfer", desc: "Çalışmaya, buluşmaya ya da sadece nefes almaya elverişli rahat ve sessiz bir ortam." },
+						{ num: "01", title: "Single Origin Kahve", desc: "Etiyopya, Kolombiya ve Guatemala'dan haftalık değişen taze kavrulmuş çekirdekler." },
+						{ num: "02", title: "Günlük Taze Mutfak", desc: "Menümüz mevsime ve pazara göre şekillenir. Her tabak günün sabahında hazırlanır." },
+						{ num: "03", title: "Huzurlu Atmosfer", desc: "Çalışmaya, buluşmaya ya da sadece nefes almaya elverişli rahat ve sessiz bir ortam." },
 					].map(i=>(
 						<div key={i.title} className="px-4">
-							<span className="text-3xl block mb-4" aria-hidden="true">{i.icon}</span>
+							<span className="text-amber-600/50 font-black text-3xl block mb-4 select-none">{i.num}</span>
 							<h3 className="font-bold text-amber-100 mb-2">{i.title}</h3>
 							<p className="text-amber-700/80 text-sm leading-relaxed">{i.desc}</p>
 						</div>
@@ -239,10 +238,10 @@ export default function MaviFincanPage() {
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<a href="tel:+902163334455" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-amber-500 hover:bg-amber-400 text-[#1a1208] font-bold rounded-xl transition-colors">
-							📞 0216 333 44 55
+							0216 333 44 55
 						</a>
 						<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 border border-amber-800/60 hover:border-amber-500/60 rounded-xl text-amber-300 font-semibold transition-colors">
-							📷 Instagram DM
+							Instagram DM
 						</a>
 					</div>
 					<p className="text-amber-800 text-xs mt-5">@mavifincan · moda.kafe@mavifincan.com.tr</p>

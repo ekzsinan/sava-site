@@ -44,7 +44,7 @@ export default function PricingPage() {
             Fatura kesilir. Lansman döneminde sınırlı slot.
           </p>
           <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 text-amber-700 text-sm font-medium">
-            <span>⚡</span> İlk 3 proje için erken benimseyici fiyatı geçerlidir
+            İlk 3 proje için erken benimseyici fiyatı geçerlidir
           </div>
         </div>
       </div>

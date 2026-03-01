@@ -80,7 +80,11 @@ export default function ContactForm() {
           <div>
             {sent ? (
               <div className="bg-brand-50 border border-brand-200 rounded-3xl p-10 text-center">
-                <span className="text-5xl block mb-4">✅</span>
+                <div className="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
                 <h2 className="text-2xl font-extrabold mb-2 text-brand-800">Mesajınız alındı!</h2>
                 <p className="text-neutral-500">En geç 1 iş günü içinde size dönüş yapacağız.</p>
               </div>
@@ -129,7 +133,7 @@ export default function ContactForm() {
                 </div>
                 {error && (
                   <p className="text-red-500 text-sm text-center bg-red-50 border border-red-100 rounded-2xl px-4 py-3">
-                    ⚠️ {error}
+                    {error}
                   </p>
                 )}
                 <div className="flex flex-col sm:flex-row gap-3">
@@ -143,7 +147,7 @@ export default function ContactForm() {
                     className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl border-2 border-green-400 text-green-700 font-semibold hover:bg-green-50 transition-colors text-base"
                     aria-label="WhatsApp ile iletişime geç"
                   >
-                    💬 WhatsApp
+                    WhatsApp
                   </a>
                 </div>
                 <p className="text-xs text-neutral-400 text-center">
@@ -159,19 +163,19 @@ export default function ContactForm() {
               <h2 className="text-2xl font-extrabold mb-4">Doğrudan ulaşın</h2>
               <ul className="space-y-4 text-neutral-600">
                 <li className="flex items-center gap-3">
-                  <span className="text-brand-500 text-xl" aria-hidden="true">✉</span>
+                  <span className="w-2 h-2 rounded-full bg-brand-500 flex-shrink-0" aria-hidden="true"></span>
                   <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-brand-600 transition-colors">
                     {CONTACT_EMAIL}
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl" aria-hidden="true">💬</span>
+                  <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" aria-hidden="true"></span>
                   <a href={SITE_WHATSAPP} target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
                     WhatsApp ile yaz
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="text-neutral-400 text-xl" aria-hidden="true">📍</span>
+                  <span className="w-2 h-2 rounded-full bg-neutral-400 flex-shrink-0" aria-hidden="true"></span>
                   <span>İstanbul, Türkiye</span>
                 </li>
               </ul>
@@ -180,9 +184,9 @@ export default function ContactForm() {
             <div className="bg-neutral-50 border border-neutral-100 rounded-3xl p-6">
               <h3 className="font-bold mb-3">Ne zaman cevap veririz?</h3>
               <ul className="space-y-2 text-sm text-neutral-500">
-                <li>⏱ E-posta: En geç 1 iş günü</li>
-                <li>💬 WhatsApp: Genellikle birkaç saat içinde</li>
-                <li>📅 Pazartesi – Cuma, 09:00 – 18:00</li>
+                <li>E-posta: En geç 1 iş günü</li>
+                <li>WhatsApp: Genellikle birkaç saat içinde</li>
+                <li>Pazartesi – Cuma, 09:00 – 18:00</li>
               </ul>
             </div>
 

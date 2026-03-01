@@ -60,7 +60,7 @@ export default function ServicesPage() {
             Sabit fiyatlı paketlerimizle hızlı karar alın. Sınırlı lansman slotları mevcuttur.
           </p>
           <div className="mt-4 inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 text-amber-700 text-sm font-medium">
-            <span>⚡</span> Sınırlı lansman slotları — İlk 3 proje için erken benimseyici fiyatı
+            Sınırlı lansman slotları — İlk 3 proje için erken benimseyici fiyatı
           </div>
         </div>
         <div className="grid md:grid-cols-3 gap-6">

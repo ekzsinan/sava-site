@@ -94,11 +94,12 @@ export const PACKAGES = [
 
 export const WORK_ITEMS = [
   {
-    slug: "eksen-law",
-    title: "Eksen Hukuk",
-    category: "Hukuk Bürosu",
-    description: "Güven ve uzmanlık odaklı kurumsal web sitesi.",
-    color: "from-slate-700 to-slate-900",
+    slug: "nomad-home",
+    title: "Nomad Home",
+    category: "E-Ticaret · Mobilya",
+    description: "Ürün kataloğu, sepet, ödeme entegrasyonu ve hesap yönetimi içeren tam e-ticaret sitesi.",
+    color: "from-stone-600 to-stone-900",
+    badge: "E-Commerce",
   },
   {
     slug: "mavi-fincan",
@@ -106,6 +107,7 @@ export const WORK_ITEMS = [
     category: "Kafe & Restoran",
     description: "Sıcak atmosferi yansıtan, rezervasyon destekli web sitesi.",
     color: "from-amber-600 to-orange-800",
+    badge: "Landing Page",
   },
   {
     slug: "orion-travel",
@@ -113,6 +115,7 @@ export const WORK_ITEMS = [
     category: "Turizm Acentesi",
     description: "Tur paketleri ve rezervasyon için modern tanıtım sitesi.",
     color: "from-teal-600 to-cyan-800",
+    badge: "Landing Page",
   },
 ];
 

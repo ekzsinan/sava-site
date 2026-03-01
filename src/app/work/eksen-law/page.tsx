@@ -35,32 +35,32 @@ const attorneys = [
 
 const practiceAreas = [
 	{
-		icon: "🏢",
+		abbr: "ŞT",
 		title: "Şirketler & Ticaret Hukuku",
 		desc: "Şirket kuruluşu, hisse devri, ortaklık anlaşmazlıkları, ticari sözleşmeler ve şirket yönetişimi konularında kapsamlı hukuki danışmanlık.",
 	},
 	{
-		icon: "⚖️",
-		title: "Birleşme & Devralma (M&A)",
+		abbr: "M&A",
+		title: "Birleşme & Devralma",
 		desc: "Hukuki durum tespiti (due diligence), hisse ve varlık devirleri, SPA müzakereleri ve kapanış süreçlerinin yönetimi.",
 	},
 	{
-		icon: "👷",
+		abbr: "İH",
 		title: "İş & Sosyal Güvenlik Hukuku",
 		desc: "İş sözleşmeleri, kıdem-ihbar tazminatı davaları, toplu işten çıkarma süreçleri ve SGK uyuşmazlıkları.",
 	},
 	{
-		icon: "🏘️",
+		abbr: "GM",
 		title: "Gayrimenkul Hukuku",
 		desc: "Tapu tescili, kat mülkiyeti, kira hukuku, inşaat sözleşmeleri ve gayrimenkul geliştirme projelerinde hukuki danışmanlık.",
 	},
 	{
-		icon: "👨‍👩‍👧",
+		abbr: "AM",
 		title: "Aile & Miras Hukuku",
 		desc: "Anlaşmalı/çekişmeli boşanma, velayet ve nafaka davaları, miras planlaması ve vasiyetname düzenlenmesi.",
 	},
 	{
-		icon: "🌐",
+		abbr: "UT",
 		title: "Uluslararası Tahkim",
 		desc: "ICC, ISTAC ve UNCITRAL kuralları kapsamında uluslararası ticari tahkim, yatırım uyuşmazlıkları ve yabancı mahkeme kararlarının tanınması.",
 	},
@@ -198,18 +198,17 @@ export default function EksenLawPage() {
 					{practiceAreas.map((s) => (
 						<div
 							key={s.title}
-							className="bg-white/[0.03] border border-white/8 rounded-2xl p-7 hover:border-amber-500/20 hover:bg-white/[0.05] transition-all group"
+							className="bg-white/[0.06] border border-white/10 rounded-2xl p-7 hover:border-amber-500/30 hover:bg-white/[0.09] transition-all group"
 						>
 							<span
-								className="text-2xl block mb-5"
-								aria-hidden="true"
+								className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/25 text-amber-400 font-black text-xs mb-5"
 							>
-								{s.icon}
+								{s.abbr}
 							</span>
 							<h3 className="font-bold text-base mb-3 group-hover:text-amber-400 transition-colors">
 								{s.title}
 							</h3>
-							<p className="text-slate-500 text-sm leading-relaxed">
+							<p className="text-slate-400 text-sm leading-relaxed">
 								{s.desc}
 							</p>
 						</div>
@@ -220,7 +219,7 @@ export default function EksenLawPage() {
 			{/* Team */}
 			<section
 				id="team"
-				className="py-24 px-6 bg-white/[0.02] border-y border-white/5"
+				className="py-24 px-6 bg-white/[0.02] border-y border-white/8"
 			>
 				<div className="max-w-6xl mx-auto">
 					<div className="mb-12">
@@ -235,7 +234,7 @@ export default function EksenLawPage() {
 						{attorneys.map((a) => (
 							<div
 								key={a.name}
-								className="bg-[#0e1117] border border-white/8 rounded-2xl p-7 hover:border-amber-500/20 transition-all"
+								className="bg-white/[0.05] border border-white/10 rounded-2xl p-7 hover:border-amber-500/25 transition-all"
 							>
 								<div className="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-5">
 									<span className="text-amber-400 font-black text-xl">
@@ -248,9 +247,9 @@ export default function EksenLawPage() {
 								</p>
 								<p className="text-slate-500 text-xs mb-1">{a.bar}</p>
 								<p className="text-slate-400 text-xs mb-1">
-									🎓 {a.edu}
+									{a.edu}
 								</p>
-								<p className="text-slate-400 text-xs mt-3 pt-3 border-t border-white/5">
+								<p className="text-slate-400 text-xs mt-3 pt-3 border-t border-white/8">
 									{a.focus}
 								</p>
 							</div>
@@ -273,7 +272,7 @@ export default function EksenLawPage() {
 					{testimonials.map((t) => (
 						<div
 							key={t.name}
-							className="bg-white/[0.03] border border-white/8 rounded-2xl p-7 flex flex-col"
+							className="bg-white/[0.05] border border-white/10 rounded-2xl p-7 flex flex-col"
 						>
 							<p className="text-amber-400 text-lg mb-4">★★★★★</p>
 							<p className="text-slate-300 leading-relaxed mb-6 text-sm italic flex-1">
@@ -313,7 +312,7 @@ export default function EksenLawPage() {
 						].map((i) => (
 							<div
 								key={i.t}
-								className="bg-[#0e1117] border border-white/8 rounded-xl p-5"
+								className="bg-white/[0.06] border border-white/10 rounded-xl p-5"
 							>
 								<p className="font-bold text-sm mb-2 text-amber-400">
 									{i.t}
@@ -342,13 +341,13 @@ export default function EksenLawPage() {
 						href="tel:+902122345678"
 						className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-500 hover:bg-amber-400 text-black font-bold rounded-xl transition-colors"
 					>
-						📞 0212 234 56 78
+						0212 234 56 78
 					</a>
 					<a
 						href="mailto:info@eksenhukuk.av.tr"
 						className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/10 hover:border-white/30 rounded-xl text-slate-300 font-semibold transition-colors"
 					>
-						✉ info@eksenhukuk.av.tr
+						info@eksenhukuk.av.tr
 					</a>
 				</div>
 				<p className="text-slate-600 text-xs">

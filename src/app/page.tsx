@@ -58,13 +58,13 @@ export default function HomePage() {
             </p>
             <ul className="space-y-4 mb-8">
               {[
-                { icon: "🔁", title: "Pipeline Yönetimi", desc: "Satış süreçlerinizi görsel olarak takip edin." },
-                { icon: "👥", title: "Müşteri Veritabanı", desc: "Tüm müşteri bilgilerini tek panelde görün." },
-                { icon: "✅", title: "Görev & Hatırlatıcı", desc: "Hiçbir fırsatı kaçırmayın." },
-                { icon: "📊", title: "Raporlama", desc: "Anlık analizler ve performans raporları." },
+                { title: "Pipeline Yönetimi", desc: "Satış süreçlerinizi görsel olarak takip edin." },
+                { title: "Müşteri Veritabanı", desc: "Tüm müşteri bilgilerini tek panelde görün." },
+                { title: "Görev & Hatırlatıcı", desc: "Hiçbir fırsatı kaçırmayın." },
+                { title: "Raporlama", desc: "Anlık analizler ve performans raporları." },
               ].map((f) => (
                 <li key={f.title} className="flex items-start gap-4">
-                  <span className="text-2xl" aria-hidden="true">{f.icon}</span>
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" aria-hidden="true"></span>
                   <div>
                     <p className="font-semibold text-neutral-800">{f.title}</p>
                     <p className="text-sm text-neutral-500">{f.desc}</p>
