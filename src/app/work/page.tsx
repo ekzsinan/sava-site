@@ -48,10 +48,12 @@ export default function WorkPage() {
               <div className="p-7 bg-white">
                 <div className="flex items-center gap-2 mb-3 flex-wrap">
                   <Badge variant="neutral">{item.category}</Badge>
-                  {"badge" in item && item.badge === "E-Commerce" ? (
-                    <Badge variant="brand">{item.badge}</Badge>
-                  ) : (
-                    <Badge variant="demo">{"badge" in item ? item.badge : "Demo"}</Badge>
+                  {"badge" in item && (
+                    <span className={`text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full border ${
+                      item.badge === "COMMERCE" ? "bg-teal-50 text-teal-700 border-teal-200" :
+                      item.badge === "BUSINESS" ? "bg-brand-50 text-brand-700 border-brand-200" :
+                      "bg-neutral-100 text-neutral-600 border-neutral-200"
+                    }`}>{item.badge}</span>
                   )}
                 </div>
                 <h2 className="text-xl font-bold mb-2 group-hover:text-brand-600 transition-colors">

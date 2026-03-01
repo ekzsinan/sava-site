@@ -94,28 +94,28 @@ export const PACKAGES = [
 
 export const WORK_ITEMS = [
   {
-    slug: "nomad-home",
-    title: "Nomad Home",
-    category: "E-Ticaret · Mobilya",
-    description: "Ürün kataloğu, sepet, ödeme entegrasyonu ve hesap yönetimi içeren tam e-ticaret sitesi.",
-    color: "from-stone-600 to-stone-900",
-    badge: "E-Commerce",
-  },
-  {
     slug: "mavi-fincan",
     title: "Mavi Fincan",
     category: "Kafe & Restoran",
-    description: "Sıcak atmosferi yansıtan, rezervasyon destekli web sitesi.",
+    description: "Tek sayfalık landing page — hero, menü, rezervasyon ve konum bölümleriyle.",
     color: "from-amber-600 to-orange-800",
-    badge: "Landing Page",
+    badge: "START",
+  },
+  {
+    slug: "eksen-law",
+    title: "Eksen Hukuk",
+    category: "Kurumsal · Hukuk Bürosu",
+    description: "5 sayfalık kurumsal site: Anasayfa, Hakkımızda, Hizmetler, Ekip, İletişim formu, SEO ve GA entegrasyonu.",
+    color: "from-slate-700 to-slate-900",
+    badge: "BUSINESS",
   },
   {
     slug: "orion-travel",
     title: "Orion Travel",
-    category: "Turizm Acentesi",
-    description: "Tur paketleri ve rezervasyon için modern tanıtım sitesi.",
+    category: "E-Ticaret · Turizm",
+    description: "10 tur paketi, ürün detay, sepet, checkout ve iyzico/Stripe ödeme entegrasyonu ile tam e-ticaret deneyimi.",
     color: "from-teal-600 to-cyan-800",
-    badge: "Landing Page",
+    badge: "COMMERCE",
   },
 ];
 
