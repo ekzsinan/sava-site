@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const included = [
-  "Mobil uyumlu (responsive) tasarım",
+  "Telefon, tablet ve masaüstüne tam uyumlu (responsive) tasarım",
   "SSL sertifikası",
   "Temel SEO optimizasyonu",
   "1–2 revizyon hakkı",
@@ -41,7 +41,7 @@ export default function PricingPage() {
             Net fiyat, <span className="gradient-text">net teslim.</span>
           </h1>
           <p className="text-lg text-neutral-500 leading-relaxed mb-4">
-            Fatura kesilir. Lansman döneminde sınırlı slot.
+            Her paket tüm cihazlara uyumlu teslim edilir. Fatura kesilir. Lansman döneminde sınırlı slot.
           </p>
           <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 text-amber-700 text-sm font-medium">
             İlk 3 proje için erken benimseyici fiyatı geçerlidir
@@ -67,7 +67,7 @@ export default function PricingPage() {
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <Badge className="mb-4">Her Pakete Dahil</Badge>
-            <h2 className="text-2xl font-extrabold mb-6">Tüm paketlerde standart olarak sunulanlar</h2>
+            <h2 className="text-2xl font-extrabold mb-6">Her pakette standart olarak gelenler</h2>
             <ul className="space-y-3">
               {included.map((item) => (
                 <li key={item} className="flex items-center gap-3 text-neutral-700">

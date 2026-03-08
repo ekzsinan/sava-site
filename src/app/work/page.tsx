@@ -22,8 +22,8 @@ export default function WorkPage() {
             Demo <span className="gradient-text">Projelerimiz</span>
           </h1>
           <p className="text-lg text-neutral-500 leading-relaxed">
-            Farklı sektörlerdeki demo çalışmalarımıza göz atın. Gerçek müşteri projeleri için
-            iletişime geçin.
+            Üç farklı paketi temsil eden canlı demo sitelerimizi inceleyin. Telefonunuzdan da açabilirsiniz.
+            Gerçek müşteri projeleri için iletişime geçin.
           </p>
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function WorkPage() {
         <div className="text-center">
           <h2 className="text-3xl font-extrabold mb-4">Sizin projeniz burada olabilir.</h2>
           <p className="text-neutral-500 mb-8">
-            Kendi sektörünüze özel bir çözüm için teklif alın.
+            Kendi sektörünüze özel, tüm cihazlarda çalışan bir web sitesi için teklif alın.
           </p>
           <Link
             href="/contact"

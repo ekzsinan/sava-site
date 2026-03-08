@@ -18,27 +18,27 @@ export const SERVICES = [
   {
     id: "landing",
     title: "Landing Page",
-    description: "Tek sayfalık, dönüşüm odaklı tanıtım sayfaları.",
+    description: "Tek sayfalık, dönüşüm odaklı tanıtım sayfası. Telefon, tablet ve masaüstünde kusursuz çalışır.",
   },
   {
     id: "corporate",
     title: "Kurumsal Web Sitesi",
-    description: "Çok sayfalı, kurumsal kimliğe uygun web siteleri.",
+    description: "Çok sayfalı, kurumsal kimliğe uygun web sitesi. İletişim formu, isteğe bağlı müşteri girişi veya panel eklenebilir.",
   },
   {
     id: "ecommerce",
     title: "E-Ticaret",
-    description: "Shopify veya WooCommerce altyapısıyla tam e-ticaret çözümü.",
+    description: "Shopify veya WooCommerce altyapısıyla tam e-ticaret çözümü. Mobil alışveriş deneyimi için optimize edilir.",
   },
   {
     id: "branding",
     title: "Logo & Marka Kimliği",
-    description: "Profesyonel logo tasarımı ve marka kılavuzu.",
+    description: "Profesyonel logo tasarımı ve marka kılavuzu. Dijital ve basılı kullanıma uygun formatlar dahildir.",
   },
   {
     id: "payment",
     title: "Ödeme Entegrasyonu",
-    description: "İyzico, Stripe ve diğer ödeme sistemleriyle entegrasyon.",
+    description: "İyzico, Stripe ve diğer ödeme sistemleriyle entegrasyon. Hem masaüstü hem mobil ödeme akışı sorunsuz çalışır.",
   },
 ];
 
@@ -52,7 +52,7 @@ export const PACKAGES = [
     items: [
       "Logo tasarımı (3 öneri)",
       "Tek sayfalık landing page",
-      "Mobil uyumlu tasarım",
+      "Telefon, tablet ve masaüstüne tam uyumlu",
       "1 revizyon hakkı",
       "3 iş günü teslim",
     ],
@@ -68,7 +68,7 @@ export const PACKAGES = [
       "5 sayfalık kurumsal web sitesi",
       "Google Analytics entegrasyonu",
       "Temel SEO optimizasyonu",
-      "İletişim formu",
+      "İletişim formu (isteğe bağlı müşteri portalı eklenebilir)",
       "2 revizyon hakkı",
       "7 iş günü teslim",
     ],
@@ -84,7 +84,7 @@ export const PACKAGES = [
       "Shopify / WooCommerce kurulumu",
       "Ödeme sistemi entegrasyonu",
       "10 ürün girişi",
-      "Mobil uyumlu tema",
+      "Mobil öncelikli, tüm cihazlara uyumlu tema",
       "2 revizyon hakkı",
       "10 iş günü teslim",
     ],
@@ -97,7 +97,7 @@ export const WORK_ITEMS = [
     slug: "mavi-fincan",
     title: "Mavi Fincan",
     category: "Kafe & Restoran",
-    description: "Tek sayfalık landing page — hero, menü, rezervasyon ve konum bölümleriyle.",
+    description: "Tek sayfalık landing page — hero, menü, rezervasyon ve konum. Tüm cihazlarda sorunsuz çalışır.",
     color: "from-amber-600 to-orange-800",
     badge: "START",
   },
@@ -105,7 +105,7 @@ export const WORK_ITEMS = [
     slug: "eksen-law",
     title: "Eksen Hukuk",
     category: "Kurumsal · Hukuk Bürosu",
-    description: "5 sayfalık kurumsal site: Anasayfa, Hakkımızda, Hizmetler, Ekip, İletişim formu, SEO ve GA entegrasyonu.",
+    description: "5 sayfalık kurumsal site: Hakkımızda, Hizmetler, Ekip, İletişim formu, SEO ve Analytics. Masaüstü ve mobilde tam işlevsel.",
     color: "from-slate-700 to-slate-900",
     badge: "BUSINESS",
   },
@@ -113,7 +113,7 @@ export const WORK_ITEMS = [
     slug: "orion-travel",
     title: "Orion Travel",
     category: "E-Ticaret · Turizm",
-    description: "10 tur paketi, ürün detay, sepet, checkout ve iyzico/Stripe ödeme entegrasyonu ile tam e-ticaret deneyimi.",
+    description: "Tur listesi, ürün detayı, sepet ve ödeme akışı. Gerçek bir web sitesi — uygulama indirmeye gerek yok.",
     color: "from-teal-600 to-cyan-800",
     badge: "COMMERCE",
   },
@@ -132,6 +132,14 @@ export const FAQS = [
   {
     q: "Teslim süresi ne kadar?",
     a: "Pakete göre 3–10 iş günü arasında değişir. START paketi 3, BUSINESS 7, COMMERCE 10 iş günüdür.",
+  },
+  {
+    q: "Web sitesi telefonda düzgün çalışır mı?",
+    a: "Evet. Tüm projeler responsive (duyarlı) tasarımla teslim edilir; telefon, tablet ve masaüstünde sorunsuz görünür ve çalışır. Mobil uyumluluk her pakette standarttır.",
+  },
+  {
+    q: "Web siteye giriş alanı veya müşteri paneli eklenebilir mi?",
+    a: "Evet. Web siteleri uygulama indirmeksizin giriş alanı, üye bölümü veya müşteri portalı içerebilir. Bu tür özellikler BUSINESS ve COMMERCE paketlerine özel teklif kapsamında eklenebilir.",
   },
   {
     q: "Kaç revizyon hakkım var?",

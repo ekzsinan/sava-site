@@ -23,8 +23,8 @@ export default function ServicesPage() {
             Dijital varlığınızı <span className="gradient-text">hızla kuruyoruz.</span>
           </h1>
           <p className="text-lg text-neutral-500 leading-relaxed">
-            Hızlı kurulum, güvenilir teslim ve fatura garantisi. İşletmeniz için doğru çözümü
-            birlikte belirleyelim.
+            Telefon, tablet ve masaüstünde tam çalışan web siteleri. Hızlı kurulum, güvenilir teslim
+            ve fatura garantisi. Gerekirse giriş alanı, müşteri portalı veya ödeme entegrasyonu da ekleyebiliriz.
           </p>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function ServicesPage() {
           <Badge className="mb-4">Paketler</Badge>
           <h2 className="text-3xl font-extrabold mb-3">Hazır Paket Seçenekleri</h2>
           <p className="text-neutral-500 max-w-lg mx-auto">
-            Sabit fiyatlı paketlerimizle hızlı karar alın. Sınırlı lansman slotları mevcuttur.
+            Sabit fiyatlı paketlerimizle hızlı karar alın. Her paket tüm cihazlara uyumlu teslim edilir.
           </p>
           <div className="mt-4 inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 text-amber-700 text-sm font-medium">
             Sınırlı lansman slotları — İlk 3 proje için erken benimseyici fiyatı

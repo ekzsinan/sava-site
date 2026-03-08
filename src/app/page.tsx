@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 const valueProps = [
   { n: "01", title: "Hızlı Teslim", desc: "Pakete göre 3–10 iş günü arasında teslim. Gecikme yok, sürpriz yok." },
   { n: "02", title: "Fatura Kesilir", desc: "Tüm projeler için e-fatura veya fatura düzenlenir. Şeffaf ücretlendirme." },
-  { n: "03", title: "Mobil Öncelikli", desc: "Her proje mobil uyumlu (responsive) olarak teslim edilir." },
+  { n: "03", title: "Her Cihazda Çalışır", desc: "Teslim ettiğimiz her web sitesi telefon, tablet ve masaüstünde tam uyumlu ve sorunsuz görünür." },
   { n: "04", title: "SEO Temeli", desc: "Başlangıç SEO optimizasyonu ile arama motorlarında doğru başlangıç." },
   { n: "05", title: "Revizyon Hakkı", desc: "Her pakette tanımlı revizyon hakkı. Ek revizyon ücretlidir." },
-  { n: "06", title: "Uzaktan Çalışırız", desc: "İstanbul merkezli, Türkiye genelinde ve uluslararası projelerde aktifiz." },
+  { n: "06", title: "Gelişmiş Özellikler", desc: "Giriş alanı, müşteri portalı veya ödeme entegrasyonu gerekirse eklenebilir — uygulama indirmeye gerek yok." },
 ];
 
 const crmFeatures = [
@@ -46,8 +46,8 @@ export default function HomePage() {
               <span className="gradient-text">profesyonel web sitesi</span> ve dijital kimlik.
             </h1>
             <p className="text-lg md:text-xl text-neutral-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-              SAVA Digital Factory, işletmelerin günler içinde modern web sitesi, marka kimliği
-              ve dijital varlık oluşturmasına yardımcı olur.
+              SAVA Digital Factory, işletmelerin günler içinde modern, tüm cihazlarda çalışan web sitesi,
+              marka kimliği ve dijital varlık oluşturmasına yardımcı olur.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button href="/pricing" size="lg">
@@ -93,8 +93,8 @@ export default function HomePage() {
           <Badge className="mb-4">Hizmet Paketleri</Badge>
           <h2 className="text-4xl font-extrabold mb-4">Doğru paketi seçin.</h2>
           <p className="text-neutral-500 max-w-2xl mx-auto">
-            Her paket farklı bir ihtiyaca cevap verir. Landing page&apos;den tam e-ticaret çözümüne
-            kadar net teslim, net fiyat.
+            Her paket farklı bir ihtiyaca cevap verir. Tüm cihazlarda çalışan, gerçek bir web sitesi —
+            uygulama mağazasına gerek yok, indirme yok.
           </p>
           <div className="mt-4 inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 text-amber-700 text-sm font-medium">
             Sınırlı lansman slotları — ilk 3 proje için erken benimseyici fiyatı
@@ -117,7 +117,7 @@ export default function HomePage() {
           <Badge className="mb-4">Demo Projeler</Badge>
           <h2 className="text-4xl font-extrabold mb-4">Her paket, gerçek bir demo.</h2>
           <p className="text-neutral-500 max-w-xl mx-auto">
-            Her demo farklı bir paketi temsil eder. Canlı deneyim için tıklayın.
+            Her demo farklı bir paketi temsil eder. Telefonunuzdan da açabilirsiniz — tüm cihazlarda çalışır.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
