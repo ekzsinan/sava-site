@@ -4,13 +4,13 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "SAVA — Ürün Odaklı Dijital Çözümler",
+  title: "SAVA Digital Factory — Profesyonel Web Sitesi & Dijital Kimlik",
   description:
-    "SAVA; CRM yazılımı ve dijital hizmetleriyle işletmenizi büyütmenize yardımcı olur. Landing page, kurumsal web sitesi, e-ticaret ve marka kimliği.",
-  metadataBase: new URL("https://sava.com.tr"),
+    "SAVA Digital Factory ile işletmeniz için profesyonel web sitesi, logo ve dijital kimlik. Landing page, kurumsal site, e-ticaret. Hızlı teslim, fatura garantisi.",
+  metadataBase: new URL("https://sava.company"),
   openGraph: {
-    title: "SAVA — Ürün Odaklı Dijital Çözümler",
-    description: "CRM yazılımı ve dijital hizmetleriyle işletmenizi büyütün.",
+    title: "SAVA Digital Factory — Profesyonel Web Sitesi & Dijital Kimlik",
+    description: "Modern işletmeler için profesyonel web sitesi ve dijital kimlik. Hızlı teslim, fatura kesilir.",
     siteName: "SAVA",
     locale: "tr_TR",
     type: "website",

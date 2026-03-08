@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SITE_EMAIL, SITE_LOCATION, NAV_LINKS } from "@/lib/constants";
+import { SITE_EMAIL, SITE_LOCATION, SITE_WHATSAPP, NAV_LINKS } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -10,8 +10,8 @@ export default function Footer() {
           <div>
             <span className="text-2xl font-extrabold text-white block mb-3">SAVA</span>
             <p className="text-sm leading-relaxed">
-              Ürün odaklı dijital çözümler. CRM ana ürünümüz. Dijital hizmetler hızlı kurulum
-              ve fon yaratma için.
+              Modern işletmeler için profesyonel web sitesi, marka kimliği ve dijital varlık
+              çözümleri. SAVA CRM yakında geliyor.
             </p>
             <p className="text-xs mt-4 text-neutral-500">{SITE_LOCATION}</p>
           </div>
@@ -51,13 +51,13 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/905xxxxxxxxx"
+                  href={SITE_WHATSAPP}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                   aria-label="WhatsApp ile iletişim"
                 >
-                  WhatsApp
+                  WhatsApp: +90 534 223 10 36
                 </a>
               </li>
               <li>

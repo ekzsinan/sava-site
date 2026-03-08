@@ -144,3 +144,47 @@ src/app/work/
 - [ ] Cart sidebar opens with item, shows total
 - [ ] Checkout: step through Bilgiler → Ödeme → Onay → success screen
 - [ ] Sepetten "Kaldır" removes the item
+
+---
+
+## Landing Page Hierarchy (Temporary Strategy — Updated March 2026)
+
+### Current Priority: SAVA Digital Factory First
+At this stage, the primary sellable product is **SAVA Digital Factory** (web development, branding, digital presence). SAVA CRM is still the long-term vision but is not yet publicly available.
+
+**Landing page section order (`/src/app/page.tsx`):**
+1. Hero — Digital Factory headline and CTAs
+2. Digital Factory value proposition (6 feature cards)
+3. Packages (SAVA START, SAVA BUSINESS, SAVA COMMERCE)
+4. Demo Projects (Mavi Fincan, Eksen Hukuk, Orion Travel)
+5. Process (how we work)
+6. FAQ
+7. SAVA CRM — marked "Coming Soon / Yakında"
+8. Contact CTA strip
+
+> **To reposition back to CRM as primary:** simply reorder the sections in `page.tsx`. The data arrays (`valueProps`, `crmFeatures`, `PACKAGES`, etc.) are already extracted at the top of the file for easy reordering. The hero copy is the only hard-coded text that needs updating.
+
+### Page Modularisation Rule
+- All section data (features, steps, etc.) must be declared as `const` arrays **above** the component, not inline in JSX.
+- This makes section reordering a matter of moving JSX blocks, not refactoring data.
+
+---
+
+## Contact & WhatsApp Rules
+
+### Canonical Contact Info
+| Channel | Value |
+|---|---|
+| Email | `info@sava.company` |
+| WhatsApp | `https://wa.me/905342231036` |
+| Phone display | +90 534 223 10 36 |
+
+- **All** WhatsApp links across main site and demo sites must use `SITE_WHATSAPP` from `@/lib/constants` or the exact URL above.
+- **All** email links must use `mailto:info@sava.company`.
+- No placeholder, dummy, or `#` href on any active contact button.
+- Buttons must **not** be styled as disabled unless form is actually being submitted.
+
+### Demo Sites Contact Info
+Demo-specific contact info (fake phone numbers, fake emails for Eksen Hukuk, Orion Travel, Mavi Fincan) is intentionally fictional. Do NOT replace demo contacts with real SAVA contact info — they are part of the demo fiction.
+
+
