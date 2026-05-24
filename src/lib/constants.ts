@@ -8,9 +8,10 @@ export const SITE_WHATSAPP = "https://wa.me/905342231036";
 
 export const NAV_LINKS = [
   { label: "Ürün", href: "/#product" },
-  { label: "Modüller", href: "/#modules" },
-  { label: "Çözümler", href: "/#solutions" },
-  { label: "Ekran Görüntüleri", href: "/#screenshots" },
+  { label: "Özellikler", href: "/#features" },
+  { label: "Otomasyon", href: "/#automation" },
+  { label: "Entegrasyonlar", href: "/#integrations" },
+  { label: "Ekranlar", href: "/#screens" },
   { label: "İletişim", href: "/contact" },
 ];
 

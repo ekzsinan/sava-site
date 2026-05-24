@@ -4,17 +4,17 @@ import { SITE_EMAIL, SITE_LOCATION, SITE_WHATSAPP } from "@/lib/constants";
 
 const footerNav: Record<string, { label: string; href: string }[]> = {
   "Ürün": [
-    { label: "SAVA ERP", href: "/#product" },
-    { label: "SAVA CRM", href: "/#modules" },
-    { label: "Workflow Automation", href: "/#modules" },
-    { label: "Dashboard Builder", href: "/#modules" },
-    { label: "Modüller", href: "/#modules" },
+    { label: "Genel Bakış", href: "/#product" },
+    { label: "Dashboard Düzenleyicisi", href: "/#dashboard" },
+    { label: "Workflow Otomasyonu", href: "/#workflow" },
+    { label: "Puanlama Motoru", href: "/#scoring" },
+    { label: "E-Posta Takip", href: "/#email" },
   ],
-  "Çözümler": [
-    { label: "Operasyon Yönetimi", href: "/#solutions" },
-    { label: "Satış Süreçleri", href: "/#solutions" },
-    { label: "İş Akışı Otomasyonu", href: "/#solutions" },
-    { label: "Raporlama & Analitik", href: "/#solutions" },
+  "Entegrasyon": [
+    { label: "WebHook", href: "/#webhook" },
+    { label: "SMTP Gönderici", href: "/#smtp" },
+    { label: "Entegrasyonlar", href: "/#integrations" },
+    { label: "Ürün Ekranları", href: "/#screens" },
   ],
   "Şirket": [
     { label: "Hakkımızda", href: "/contact" },

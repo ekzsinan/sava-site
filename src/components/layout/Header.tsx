@@ -60,7 +60,7 @@ export default function Header() {
               href="/contact"
               className="hidden lg:inline-flex items-center px-3.5 py-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
-              İletişime Geç
+              Bizimle Görüşün
             </Link>
             <Link
               href="/contact"
@@ -127,7 +127,7 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className="w-full text-center px-6 py-3 rounded-xl border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 transition-colors"
             >
-              İletişime Geç
+              Bizimle Görüşün
             </Link>
             <Link
               href="/contact"
