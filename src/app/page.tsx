@@ -13,10 +13,11 @@ export const metadata: Metadata = {
 // ── Data ──────────────────────────────────────────────────
 
 const heroTrust = [
-  "Tek merkezden operasyon yönetimi",
-  "Otomasyon destekli süreçler",
-  "Gerçek zamanlı dashboardlar",
-  "Entegrasyon odaklı yapı",
+  "Personel süreçlerini tek merkezden yönetin",
+  "Operasyonları anlık takip edin",
+  "Otomasyonlarla zaman kazanın",
+  "Veriye dayalı kararlar alın",
+  "Müşteri süreçlerini kontrol altında tutun",
 ];
 
 const invisibleLosses = [
@@ -191,22 +192,38 @@ export default function HomePage() {
       {/* ── 1. HERO ─────────────────────────────────── */}
       <section className="hero-gradient pt-28 pb-20 md:pb-28 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-[1.05fr_1fr] gap-14 items-center">
-            <div className="max-w-xl">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-14 items-start">
+            <div>
               <div className="pill-brand mb-6">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse" />
                 SAVA ERP · İşletmenizin Yeni Kontrol Merkezi
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-slate-900 leading-[1.08] mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-slate-900 leading-[1.08] mb-7">
                 İşletmenizin tüm operasyonlarını{" "}
                 <span className="gradient-text">tek merkezden</span>{" "}
                 yönetin.
               </h1>
-              <p className="text-lg text-slate-600 leading-relaxed mb-8">
-                SAVA ERP; müşteri takibi, personel görevleri, workflow otomasyonları, e-posta takipleri,
-                dashboard yönetimi ve dış sistem entegrasyonlarını tek merkezde birleştiren modern ERP platformudur.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
+
+              <div className="space-y-4 mb-8">
+                <p className="text-base text-slate-600 leading-relaxed">
+                  SAVA ERP; personel yönetimi, müşteri takibi, görev süreçleri, dashboard yönetimi ve
+                  iş akış otomasyonlarını tek platformda birleştirir.
+                  Tüm ekip aynı sistem üzerinden çalışır — böylece süreçler daha düzenli ilerler,
+                  operasyon takibi kolaylaşır ve yöneticiler gerçek zamanlı verilere ulaşabilir.
+                </p>
+                <p className="text-base text-slate-600 leading-relaxed">
+                  Admin panel üzerinden kullanıcı ekranları sürükle-bırak mantığıyla düzenlenebilir.
+                  Her personel yalnızca kendi yetkisine uygun ekranları görür. Sistemde yapılan tüm
+                  işlemler ortak veri havuzunu besler — bu sayede operasyonlar ölçülebilir hale gelir
+                  ve veriye dayalı raporlamalar oluşturulabilir.
+                </p>
+                <p className="text-base text-slate-600 leading-relaxed">
+                  Workflow otomasyonları, e-posta süreçleri ve entegrasyon desteği sayesinde tekrar
+                  eden işler azaltılır, müşteri takibi güçlenir ve ekip verimliliği artırılır.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3 mb-8">
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-600 text-white font-semibold rounded-xl hover:bg-brand-700 transition-colors shadow-sm"
@@ -220,16 +237,17 @@ export default function HomePage() {
                   href="/#screens"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-slate-700 font-semibold rounded-xl border border-slate-200 hover:border-brand-200 hover:text-brand-700 transition-colors"
                 >
-                  Ürün Ekranlarını Gör
+                  Ürün Ekranlarını İncele
                 </Link>
               </div>
 
-              {/* Trust strip */}
-              <div className="grid grid-cols-2 gap-x-6 gap-y-3 mt-10 pt-8 border-t border-slate-200/70">
+              {/* Trust strip — 5 items */}
+              <div className="pt-6 border-t border-slate-200/70 flex flex-col gap-2.5">
                 {heroTrust.map((t) => (
-                  <div key={t} className="flex items-center gap-2 text-sm text-slate-600">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0">
-                      <path d="M2.5 7l3 3 6-6" stroke="#2563eb" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                  <div key={t} className="flex items-center gap-2.5 text-sm text-slate-600">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" className="flex-shrink-0">
+                      <circle cx="7.5" cy="7.5" r="7" stroke="#dbeafe" strokeWidth="1" fill="#eff6ff" />
+                      <path d="M4.5 7.5l2 2 4-4" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     {t}
                   </div>
@@ -238,7 +256,7 @@ export default function HomePage() {
             </div>
 
             {/* Right — Real product screenshot */}
-            <div className="relative">
+            <div className="relative lg:pt-4">
               <BrowserFrame
                 src="/dashboard-editor.png"
                 alt="SAVA ERP Dashboard Düzenleyicisi"
