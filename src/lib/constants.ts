@@ -7,10 +7,10 @@ export const SITE_LOCATION = "İstanbul, Türkiye";
 export const SITE_WHATSAPP = "https://wa.me/905342231036";
 
 export const NAV_LINKS = [
-  { label: "Ürünler", href: "/products" },
-  { label: "Dijital Hizmetler", href: "/services" },
-  { label: "Projeler", href: "/work" },
-  { label: "Fiyatlar", href: "/pricing" },
+  { label: "Ürün", href: "/#product" },
+  { label: "Modüller", href: "/#modules" },
+  { label: "Çözümler", href: "/#solutions" },
+  { label: "Ekran Görüntüleri", href: "/#screenshots" },
   { label: "İletişim", href: "/contact" },
 ];
 
